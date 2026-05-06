@@ -1,0 +1,73 @@
+{
+  "repo": "dartmerkle",
+  "language": "Dart",
+  "category": "Algorithms",
+  "goal": "Build Merkle roots and inclusion proof fixtures.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 61,
+      "slack": 34,
+      "drag": 10,
+      "confidence": 58,
+      "score": 184,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 45,
+      "slack": 31,
+      "drag": 10,
+      "confidence": 73,
+      "score": 164,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 66,
+      "slack": 53,
+      "drag": 15,
+      "confidence": 52,
+      "score": 192,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 61,
+      "slack": 46,
+      "drag": 19,
+      "confidence": 84,
+      "score": 195,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 74,
+      "slack": 32,
+      "drag": 31,
+      "confidence": 67,
+      "score": 154,
+      "lane": "ship"
+    }
+  ]
+}
